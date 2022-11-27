@@ -3,7 +3,7 @@ let b = document.querySelector(".calc-button");
 
 function displayBill() {
     let price = document.getElementById("price");
-    if (price.placeholder != '$0.00') {
+    if (bill.value !== '') {
         price.innerHTML = '$' + bill.value;
     } else {
         price.innerHTML = '$0.00';
