@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="main-block">
+        <div id="input">
+            <h4>Bill</h4>
+            <input maxlength="6" oninput="displayBill()" id="bill-input" type="text" name="bill" placeholder="$0.00">
+            <h4>Tip Percent %</h4>
+            <button class="five" onclick="calcTip(5)">5%</button>
+            <button class="ten" onclick="calcTip(10)">10%</button>
+            <button class="fifteen" onclick="calcTip(15)">15%</button>
+            <button class="twenty" onclick="calcTip(20)">20%</button>
+            <button class="twenty-five" onclick="calcTip(25)">25%</button>
+            <input oninput="calcTip(value)" maxlength="2" id="custom-percent" type="text" placeholder="Custom">
+        </div>
+        <div id="result">
+            <div id="bill">
+                <h4 class="left-side-h4">Bill</h4>
+                <h2 id="price">$0.00</h2>
+            </div>
+            <div id="tip">
+                <p style="font-weight: bold;" class="left-side-h4">Tip amount</p>
+                <h2 id="tip-amount">$0.00</h2>
+            </div>
+            <div id="price-div">
+                <h4 class="left-side-h4">Total</h4>
+                <h2 id="total-price">$0.00</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>

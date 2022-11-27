@@ -1,0 +1,76 @@
+body {
+  background-color: rgb(197, 228, 231);
+  margin: auto;
+}
+
+#main-block {
+  background-color: white;
+  display: flex;
+  margin: 10%;
+  min-height: 250px;
+  max-height: 500px;
+  width: 800;
+  padding: 5% 3%;
+  border-radius: 25px;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+}
+
+#input {
+  width: 80%;
+  margin-bottom: 3%;
+}
+#input input {
+  width: 90%;
+  min-height: 50px;
+  text-align: end;
+  border: none;
+  font-size: large;
+  font-weight: bold;
+  color: rgba(0, 71, 74, 0.583);
+  background-color: rgb(243, 248, 251);
+}
+#input input::-moz-placeholder {
+  color: rgb(184, 204, 203);
+  text-align: end;
+  font-size: large;
+}
+#input input:-ms-input-placeholder {
+  color: rgb(184, 204, 203);
+  text-align: end;
+  font-size: large;
+}
+#input input::placeholder {
+  color: rgb(184, 204, 203);
+  text-align: end;
+  font-size: large;
+}
+#input h4 {
+  font-size: medium;
+}
+#input button {
+  padding: 5%;
+  border-radius: 9px;
+  margin-bottom: 4%;
+  background-color: rgb(0, 71, 74);
+  color: white;
+  border: none;
+}
+#input button:hover {
+  background-color: rgba(0, 71, 74, 0.662);
+  cursor: pointer;
+  caret-color: white;
+}
+
+#result {
+  color: white;
+  padding: 4%;
+  width: 65%;
+  background-color: rgb(0, 71, 74);
+  border-radius: 20px;
+}
+#result div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
